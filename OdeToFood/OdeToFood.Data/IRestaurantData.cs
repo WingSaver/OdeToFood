@@ -8,7 +8,7 @@ namespace OdeToFood.Data
 {
     public interface IRestaurantData
     {
-        IEnumerable<Restaurant> GetAll();
+        IEnumerable<Restaurant> GetRestaurantsByName(string name);
     }
 
     public class InMemoryRestaurantData : IRestaurantData
@@ -25,13 +25,15 @@ namespace OdeToFood.Data
             };
         }
 
-        public IEnumerable<Restaurant> GetAll()
+        public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
         {
             //return from r in restaurants
             //       orderby r.
-            var result = restaurants.OrderBy(or => or.Name);
+            //var result = restaurants.OrderBy(or => or.Name);
+            //var result = restaurants.Where(or=> string.IsNullOrEmpty(or.Name) || or.Name.StartsWith(name)).OrderBy(or => or.Name);
 
             var result1 = from r in restaurants
+                          where string.IsNullOrEmpty(name) || r.Name.ToLower().StartsWith(name.ToLower())
                           orderby r.Name
                           select r;
 
@@ -39,7 +41,7 @@ namespace OdeToFood.Data
             //        orderby r.Name
             //        select r);
 
-            return result;
+            return result1;
         }
     }
 }

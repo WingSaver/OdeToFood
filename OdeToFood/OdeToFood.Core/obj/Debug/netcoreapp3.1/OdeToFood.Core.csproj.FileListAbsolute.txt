@@ -6,3 +6,4 @@ D:\Learn\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Co
 D:\Learn\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.AssemblyInfo.cs
 D:\Learn\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.dll
 D:\Learn\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.pdb
+D:\Learn\OdeToFood\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.csprojAssemblyReference.cache
