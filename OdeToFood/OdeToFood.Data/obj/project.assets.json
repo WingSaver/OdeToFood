@@ -11,19 +11,6 @@
         "runtime": {
           "bin/placeholder/OdeToFood.Core.dll": {}
         }
-      },
-      "OdeToFood.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "OdeToFood.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/OdeToFood.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/OdeToFood.Data.dll": {}
-        }
       }
     }
   },
@@ -32,16 +19,11 @@
       "type": "project",
       "path": "../OdeToFood.Core/OdeToFood.Core.csproj",
       "msbuildProject": "../OdeToFood.Core/OdeToFood.Core.csproj"
-    },
-    "OdeToFood.Data/1.0.0": {
-      "type": "project",
-      "path": "../OdeToFood.Data/OdeToFood.Data.csproj",
-      "msbuildProject": "../OdeToFood.Data/OdeToFood.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "OdeToFood.Data >= 1.0.0"
+      "OdeToFood.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -50,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learn\\OdeToFood\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
-      "projectName": "OdeToFood",
-      "projectPath": "D:\\Learn\\OdeToFood\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+      "projectUniqueName": "D:\\Learn\\OdeToFood\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+      "projectName": "OdeToFood.Data",
+      "projectPath": "D:\\Learn\\OdeToFood\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
       "packagesPath": "C:\\Users\\marlo\\.nuget\\packages\\",
-      "outputPath": "D:\\Learn\\OdeToFood\\OdeToFood\\OdeToFood\\obj\\",
+      "outputPath": "D:\\Learn\\OdeToFood\\OdeToFood\\OdeToFood.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Learn\\OdeToFood\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
-              "projectPath": "D:\\Learn\\OdeToFood\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj"
+            "D:\\Learn\\OdeToFood\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+              "projectPath": "D:\\Learn\\OdeToFood\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
             }
           }
         }
@@ -95,9 +77,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
